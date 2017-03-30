@@ -9,7 +9,7 @@ mongoose.Promise = global.Promise;
 
 mongoose.connect(db.connectionUrl).then(() => {
     console.log('Connected successfully.');
-    app.listen(process.env.APP_PORT || 3000, () => {
+    app.listen(process.env.APP_PORT || 8080, () => {
         console.log(`Server running on port ${process.env.APP_PORT}`);
     });
 }, err => {
